@@ -1,0 +1,58 @@
+======my lab execution steps==========
+Microsoft Windows [Version 10.0.26200.9457]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\lab insem exam>git init
+Initialized empty Git repository in C:/lab insem exam/.git/
+
+C:\lab insem exam>git add .
+
+C:\lab insem exam>git commit -m "Initial commit"
+[master (root-commit) cb24d30] Initial commit
+ 1 file changed, 46 insertions(+)
+ create mode 100644 college placement management.html
+
+C:\lab insem exam>git remote add origin https://github.com/2500080175/lab-insem-exam.git
+
+C:\lab insem exam>git branch -M main
+
+C:\lab insem exam>git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 492 bytes | 492.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/2500080175/lab-insem-exam.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\lab insem exam>git fetch
+
+C:\lab insem exam>git pull
+Already up to date.
+
+C:\lab insem exam>git log --oneline
+cb24d30 (HEAD -> main, origin/main, origin/HEAD) Initial commit
+
+C:\lab insem exam>echo Reset demonstration > reset.txt
+
+C:\lab insem exam>git add .
+
+C:\lab insem exam>git commit -m "Added reset demonstration"
+[main 51c2657] Added reset demonstration
+ 1 file changed, 1 insertion(+)
+ create mode 100644 reset.txt
+
+C:\lab insem exam>git log --online
+fatal: unrecognized argument: --online
+
+C:\lab insem exam>git log --oneline
+51c2657 (HEAD -> main) Added reset demonstration
+cb24d30 (origin/main, origin/HEAD) Initial commit
+
+C:\lab insem exam>git reset --hard HEAD
+HEAD is now at 51c2657 Added reset demonstration
+
+C:\lab insem exam>git reset --hard HEAD~1
+HEAD is now at cb24d30 Initial commit
